@@ -8,9 +8,11 @@
     <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/colorbox.css" />
     <link href="css/no-theme/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="./js/jquery-ui-1.10.1.custom.min.js"></script>
     <script type="text/javascript" src="./js/jquery.placeholder.min.js"></script>
@@ -18,6 +20,7 @@
     <script type="text/javascript" src="./js/script.js"></script>
     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <div id="wrapper">
@@ -27,7 +30,7 @@
         <div id="header">
           <div class="header">
             <a href="" class="logo"><img src="./img/logo.png" width="250" height="60" alt="Форелевое хозяйство РАШАЛЬ"></a>
-            <div class="price">1 кг <br><span>500 руб.</span></div>
+            <div class="price">1 кг <br><span>350 руб.</span></div>
             <div class="tel_box">
               <div class="tel">8(912)851-77-15</div>
 			        <div class="tel">8(904)318-31-60</div>
@@ -39,8 +42,7 @@
         <div id="banner">
           <div class="banner">
             <div class="text">
-              <div class="t1">РАШАЛЬ</div>
-              <div class="t2">Выращивание</div>
+              <div class="t2">Выращивание радужной</div>
               <div class="t3"><span class="c"><span class="left"></span><span class="right"></span><span class="d">Форели</span></span></div>
               <div class="t4">высшего качества</div>
             </div>
@@ -50,7 +52,7 @@
         <!-- offer box -->
         <div class="cnt_box box_offer">
           <div class="inner">
-            <h1>Форель, осётр. Масса нетто 1000 гр. <br>Цена 500 руб.</h1>
+            <h1>Форель, осётр. Масса нетто 1000 гр. <br>Цена 350 руб.</h1>
             <div class="text">Гарантия возврата средств, если товар некачественный.</div>
           </div>
         </div>
@@ -99,13 +101,47 @@
           <!-- gallery box -->
           <div class="cnt_box box_gallery">
             <div class="inner">
-              <ul class="gallery">
-                <li><a rel="gallery" href="./img/01.jpeg"><img src="https://placehold.it/191x191" alt=""></a></li>
-                <li><a rel="gallery" href="./img/02.jpeg"><img src="https://placehold.it/191x191" alt=""></a></li>
-                <li><a rel="gallery" href="./img/03.jpeg"><img src="https://placehold.it/191x191" alt=""></a></li>
-                <li><a rel="gallery" href="./img/04.jpeg"><img src="https://placehold.it/191x191" alt=""></a></li>
-                <li><a rel="gallery" href="./img/05.jpeg"><img src="https://placehold.it/191x191" alt=""></a></li>
-              </ul>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <ul class="gallery">
+                      <li><a rel="gallery" href="./img/carousel/1.jpg"><img src="./img/carousel/1.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/2.jpg"><img src="./img/carousel/2.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/3.jpg"><img src="./img/carousel/3.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/4.jpg"><img src="./img/carousel/4.jpg" width="191" height="191" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <ul class="gallery">
+                      <li><a rel="gallery" href="./img/carousel/5.jpg"><img src="./img/carousel/5.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/6.jpg"><img src="./img/carousel/6.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/7.jpg"><img src="./img/carousel/7.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/8.jpg"><img src="./img/carousel/8.jpg" width="191" height="191" alt=""></a></li>
+                    </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <ul class="gallery">
+                      <li><a rel="gallery" href="./img/carousel/9.jpg"><img src="./img/carousel/9.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/10.jpg"><img src="./img/carousel/10.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/5.jpg"><img src="./img/carousel/5.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/7.jpg"><img src="./img/carousel/7.jpg" width="191" height="191" alt=""></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
           </div>
           <!-- /gallery box -->
@@ -149,7 +185,13 @@
                   </div>
                   <div class="gr_block item3">
                     <a class="name" href=""><span></span>Интересный факт:</a>
-                    <div class="text">Форель настолько плохо переносит повышение температуры, что впадает в оцепенение. Зная повадки и места обитания этой рыбы, в летний зной её легко поймать голыми руками.</div>
+                    <div class="text">
+                      <ul>
+                        <li>Установка замкнутого водоснабжения (УЗВ) представляет собой систему бассейнов и очистных сооружений. Вода из бассейна проходит сначала механическую очистку, затем биологическую. Далее вода проходит этап насыщения кислородом и вновь поступает в бассейны.</li>
+                        <li>Современные УЗВ оснащены автоматическими системами контроля, что дает возможность следить за качеством воды.</li>
+                        <li>Разведение рыбы в УЗВ возможно в местах с любым климатом круглый год, без вреда для окружающей среды.</li>
+                      </ul>
+                    </div>
                     <div class="arr"></div>
                   </div>
                   <div class="gr_block item4">
@@ -219,6 +261,15 @@
             </div>
           </div>
           <!-- /order box -->
+          <!-- map box -->
+          <div class="cnt_box box_map">
+            <div class="title_box2">
+              <span>Мы находимся<span class="left"></span><span class="right"></span></span>
+            </div>
+          </div>
+          <div class="inner">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d139293.09194320175!2d53.13612553189217!3d56.938548265206165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d56.8441768!2d53.2022793!4m5!1s0x43e14ed9090ed089%3A0xe8b2571e2cac6b2e!2zVW5uYW1lZCBSb2FkLCDQmtCw0L3QuNGE0L7Qu9GM0L3Ri9C5LCDRgNC10YHQv9GD0LHQu9C40LrQsCDQo9C00LzRg9GA0YLQuNGPLCA0MjcxMDQ!3m2!1d57.0352678!2d53.197373199999994!5e0!3m2!1sru!2sru!4v1535105125054" width="1400" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
       <!-- footer -->
