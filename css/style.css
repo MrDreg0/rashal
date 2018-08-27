@@ -390,8 +390,41 @@ body .title_box > span .right {
   font-family: Tahoma, "Geneva CY", sans-serif;
   font-size: 16px;
 }
+#wrap .box_map a {
+  color: #000000;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: 'rex_bold_bold';
+}
+#wrap .box_map a:hover {
+  color: #e6695b;
+  text-decoration: none;
+}
 #wrap .box_map .title_box2 {
   margin-bottom: 35px;
+}
+#wrap .card {
+  border: none;
+}
+#wrap .card-header {
+  border: none;
+  padding: 0;
+}
+#wrap .card-body {
+  padding: 0;
+}
+#wrap .box_map .arr {
+  display: block;
+  margin: 10px auto 0;
+  width: 14px;
+  height: 8px;
+  cursor: pointer;
+  background: url(../img/arrows.png) 0 -8px;
+}
+#wrap .box_map a:hover .arr,
+#wrap .box_map .arr:hover {
+  background: url(../img/arrows.png) 0 0;
+  transform: rotate(180deg);
 }
 /* ----------------------------------- *\
 			content

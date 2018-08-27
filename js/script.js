@@ -60,10 +60,13 @@ $(document).ready(function(){
             }
             return false;
         }
-        return false;
     })
     //colorbox
-    $('.sert a, .gallery a').colorbox();
+    $('.sert a').colorbox();
+    $('.gallery a').colorbox({
+        maxWidth: '60%',
+        maxHeight: '460px'
+    })
 
     $('.online_form .submit').on('click',function(event){
         event.preventDefault();

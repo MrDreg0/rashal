@@ -21,6 +21,13 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff0000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div id="wrapper">
@@ -128,8 +135,8 @@
                     <ul class="gallery">
                       <li><a rel="gallery" href="./img/carousel/9.jpg"><img src="./img/carousel/9.jpg" width="191" height="191" alt=""></a></li>
                       <li><a rel="gallery" href="./img/carousel/10.jpg"><img src="./img/carousel/10.jpg" width="191" height="191" alt=""></a></li>
-                      <li><a rel="gallery" href="./img/carousel/5.jpg"><img src="./img/carousel/5.jpg" width="191" height="191" alt=""></a></li>
-                      <li><a rel="gallery" href="./img/carousel/7.jpg"><img src="./img/carousel/7.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/11.jpg"><img src="./img/carousel/11.jpg" width="191" height="191" alt=""></a></li>
+                      <li><a rel="gallery" href="./img/carousel/12.jpg"><img src="./img/carousel/12.jpg" width="191" height="191" alt=""></a></li>
                     </ul>
                   </div>
                 </div>
@@ -262,14 +269,28 @@
           </div>
           <!-- /order box -->
           <!-- map box -->
-          <div class="cnt_box box_map">
-            <div class="title_box2">
-              <span>Мы находимся<span class="left"></span><span class="right"></span></span>
+
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <div class="cnt_box box_map">
+                  <div class="title_box2">
+                    <span><a href="#" id="toggle-map" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Мы находимся<span class="arr"></span></a><span class="left"></span><span class="right"></span></span>
+                  </div>
+                </div>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="inner map_block">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d139293.09194320175!2d53.13612553189217!3d56.938548265206165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d56.8441768!2d53.2022793!4m5!1s0x43e14ed9090ed089%3A0xe8b2571e2cac6b2e!2zVW5uYW1lZCBSb2FkLCDQmtCw0L3QuNGE0L7Qu9GM0L3Ri9C5LCDRgNC10YHQv9GD0LHQu9C40LrQsCDQo9C00LzRg9GA0YLQuNGPLCA0MjcxMDQ!3m2!1d57.0352678!2d53.197373199999994!5e0!3m2!1sru!2sru!4v1535105125054" width="1400" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="inner">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d139293.09194320175!2d53.13612553189217!3d56.938548265206165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d56.8441768!2d53.2022793!4m5!1s0x43e14ed9090ed089%3A0xe8b2571e2cac6b2e!2zVW5uYW1lZCBSb2FkLCDQmtCw0L3QuNGE0L7Qu9GM0L3Ri9C5LCDRgNC10YHQv9GD0LHQu9C40LrQsCDQo9C00LzRg9GA0YLQuNGPLCA0MjcxMDQ!3m2!1d57.0352678!2d53.197373199999994!5e0!3m2!1sru!2sru!4v1535105125054" width="1400" height="700" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
+
+
         </div>
       </div>
       <!-- footer -->
