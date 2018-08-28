@@ -536,6 +536,18 @@ body .title_box > span .right {
 #wrap .carousel-indicators li.active {
   background-color: #000000;
 }
+#wrap .carousel img{
+  position: relative;
+}
+#wrap .carousel .carousel-item:first-child li:nth-child(3) img{
+  right: 40px;
+}
+#wrap .carousel .carousel-item:first-child li:nth-child(4) img{
+  right: 70px;
+}
+#wrap .carousel .carousel-item:nth-child(2) li:nth-child(1) img{
+  right: 90px;
+}
 #wrap .box_gallery .inner ul.gallery li a {
   display: block;
   width: 191px;
@@ -1012,19 +1024,19 @@ body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-close {
   text-align: center;
 }
 div.scrollup {
-  position: fixed; /* фиксированная позиция */
-  color: #fff; /* цвет текста */
-  background-color: #e57568; /* цвет заднего фона */
-  right: 20px; /* расстояние от правого края */
-  bottom: 0px; /* расстояние от нижнего края */
-  padding: 4px 10px; /* отступы до содержимого блока */
-  font-size: 20px; /* размер шрифта (иконки) */
-  border-top-left-radius: 4px; /* скругление верхнего левого угла */
-  border-top-right-radius: 4px; /* скругление верхнего правого угла */
-  cursor: pointer; /* форма курсора */
-  display: none; /* не отображать элемент */
-  text-align: center; /*выравнивание содержимого элемента по центру */
+  position: fixed;
+  color: #fff;
+  background-color: #e57568;
+  right: 20px;
+  bottom: 0px;
+  padding: 4px 10px;
+  font-size: 20px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
 }
 div.scrollup:hover {
-  opacity: 0.7; /* цвет заднего фона при наведении */
+  opacity: 0.7;
 }
