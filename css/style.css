@@ -693,10 +693,41 @@ body .title_box > span .right {
   outline: none;
   cursor: pointer;
 }
-#wrap .box_order .inner {
+#wrap .box_order>.inner {
   overflow: visible;
   background: url(../img/bg_line.png) center bottom no-repeat;
   padding-bottom: 75px;
+}
+#wrap table {
+  padding: 10px;
+  width: 100%;
+}
+#wrap table tr{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+#wrap table th:not(:first-child),
+#wrap table td:not(:first-child) {
+  width: 15%;
+  padding: 10px;
+}
+#wrap table th:not(:first-child) {
+  border-bottom: 2px solid #e6695b;
+  font-weight: 700;
+}
+#wrap table td:not(:first-child) {
+  font-size: 16px;
+}
+#wrap table th:first-child,
+#wrap table td:first-child {
+  width: 25%;
 }
 #wrap .box_grafik {
   overflow: visible;

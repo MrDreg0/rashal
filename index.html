@@ -90,7 +90,7 @@
               <li>
                 <img src="./img/ico6.png" alt="" class="ico">
                 <h2>Лучше - не значит дороже</h2>
-                <p>Мы не торгуем дешевыми продуктами, мы торгуем качественными продуктами! Мы стараемся минимизировать цену для конечного покупателя, но никогда ни в упрек качеству товара.</p>
+                <p>Мы торгуем качественными продуктами! Мы стараемся минимизировать цену для конечного покупателя, но никогда ни в упрек качеству товара.</p>
               </li>
               <li>
                 <img src="./img/ico7.png" alt="" class="ico">
@@ -109,7 +109,7 @@
           <!-- gallery box -->
           <div class="cnt_box box_gallery">
             <div class="inner">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="100000">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
                 <ol class="carousel-indicators">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -256,6 +256,42 @@
               <span>Онлайн заказ форели<span class="left"></span><span class="right"></span></span>
             </div>
             <div class="inner">
+              <div id="accordion-price">
+                <div class="card">
+                  <div class="card-header" id="priceOne">
+                    <div class="cnt_box box_map">
+                      <div class="title_box2">
+                        <span><a href="#" id="toggle-price" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice">Наш прайс<span class="arr"></span></a><span class="left"></span><span class="right"></span></span>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div id="collapsePrice" class="collapse" aria-labelledby="PriceOne" data-parent="#accordion-price">
+                    <div class="card-body">
+                      <div class="inner map_block">
+                        <table>
+                          <tr>
+                            <th></th>
+                            <th>Наименование</th>
+                            <th>Состояние</th>
+                            <th>Вес</th>
+                            <th>Длинна</th>
+                            <th>Цена</th>
+                          </tr>
+                          <tr>
+                            <td><img src="img/price/1.jpg" height="100" alt="Форель радужная"></td>
+                            <td>Форель "Радужная"</td>
+                            <td>Живая</td>
+                            <td>50-90см</td>
+                            <td>1-5кг</td>
+                            <td>350 р/кг</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="online_form">
                 <form action="index1.php" method="POST">
                   <input required type="text" name="name" placeholder="Укажите свое имя" />
