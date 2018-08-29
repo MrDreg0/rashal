@@ -211,8 +211,19 @@ body .title_box > span .right {
   display: block;
   float: left;
   position: absolute;
-  top: 20px;
+  top: 8px;
   left: 0;
+}
+.logo span {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  color: #000000;
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  line-height: 18px;
+  letter-spacing: 1.5px;
 }
 .header .price {
   width: 119px;
