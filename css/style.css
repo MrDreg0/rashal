@@ -214,6 +214,10 @@ body .title_box > span .right {
   top: 8px;
   left: 0;
 }
+.header .logo:hover,
+.header .logo:focus {
+  text-decoration: none;
+}
 .logo span {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
@@ -224,6 +228,7 @@ body .title_box > span .right {
   font-style: italic;
   line-height: 18px;
   letter-spacing: 1.5px;
+  text-shadow: 0.5px 0.5px 0.5px gray;
 }
 .header .price {
   width: 119px;
@@ -667,9 +672,13 @@ body .title_box > span .right {
   box-shadow: inset 1px 1px 5px #ccc, 2px 2px 1px #fff;
   border-radius: 10px;
 }
+#wrap .box_order form {
+  text-align: center;
+}
 #wrap .box_order .online_form input[type="text"] {
   display: inline-block;
   *display: inline;
+  margin: 0 7px;
   zoom: 1;
   vertical-align: middle;
   text-align: center;
@@ -680,7 +689,6 @@ body .title_box > span .right {
   border-radius: 10px;
   border: 1px solid #dedede;
   box-shadow: 0 0 2px #dedede, inset 1px 1px 2px #dedede;
-  margin-right: 14px;
   outline: none;
 }
 #wrap .box_order .online_form input[type="submit"],
@@ -689,7 +697,7 @@ body .title_box > span .right {
   *display: inline;
   zoom: 1;
   vertical-align: middle;
-  width: 302px;
+  width: 295px;
   height: 50px;
   background: #e57568;
   border-radius: 10px;
@@ -701,6 +709,7 @@ body .title_box > span .right {
   color: #fff;
   padding: 0;
   margin: 0;
+  margin-top: 20px;
   outline: none;
   cursor: pointer;
 }
@@ -723,6 +732,9 @@ body .title_box > span .right {
   line-height: 20px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 500;
+}
+#wrap table tr:not(:first-child) {
+  border-bottom: 1px solid rgba(123, 123, 123, 0.3);
 }
 #wrap table th:not(:first-child),
 #wrap table td:not(:first-child) {
