@@ -75,7 +75,6 @@ $(document).ready(function(){
         var template2 = /^[0-9-+()]+$/;
         var email = $('.online_form input[name=email]').val();
         var phone = $('.online_form input[name=phone]').val();
-        var count = $('.online_form input[name=count]').val();
         var error = false;
         if($('.online_form input[name=name]').val()=='')
         {
@@ -94,18 +93,12 @@ $(document).ready(function(){
             $('.online_form input[name=phone]').attr("placeholder","Неправильный телефон");
             error = true;
         }
-        if(template2.test(count)==false)
-        {
-            $('.online_form input[name=count]').val('');
-            $('.online_form input[name=count]').attr("placeholder","Неправильное количество");
-            error = true;
-        }
         if(error == true)
             return false;
         $.ajax({
             url:url,
             type:'post',
-            data:{'name':$('.online_form input[name=name]').val(),'email':$('.online_form input[name=email]').val(),'phone':$('.online_form input[name=phone]').val(),'count':$('.online_form input[name=count]').val()},
+            data:{'name':$('.online_form input[name=name]').val(),'email':$('.online_form input[name=email]').val(),'phone':$('.online_form input[name=phone]').val()},
             success: function(data){
                 $('#order_ok').dialog('open');
             }
