@@ -530,10 +530,10 @@ body .title_box > span .right {
   overflow: hidden;
 }
 #wrap .carousel-control-prev {
-  left: -5%;
+  left: 0;
 }
 #wrap .carousel-control-next {
-  right: -5%;
+  right: 0;
 }
 #wrap .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
@@ -558,10 +558,10 @@ body .title_box > span .right {
 #wrap .carousel .carousel-item:first-child li:nth-child(3) img{
   right: 40px;
 }
-#wrap .carousel .carousel-item:first-child li:nth-child(4) img{
+#wrap .carousel .carousel-item:nth-child(2) li:nth-child(1) img{
   right: 70px;
 }
-#wrap .carousel .carousel-item:nth-child(2) li:nth-child(1) img{
+#wrap .carousel .carousel-item:first-child li:nth-child(2) img{
   right: 90px;
 }
 #wrap .box_gallery .inner ul.gallery li a {
@@ -736,9 +736,12 @@ body .title_box > span .right {
 #wrap table tr:not(:first-child) {
   border-bottom: 1px solid rgba(123, 123, 123, 0.3);
 }
+#wrap table tr:last-child {
+  border-top: 2px solid rgba(123, 123, 123, 0.6);
+}
 #wrap table th:not(:first-child),
 #wrap table td:not(:first-child) {
-  width: 15%;
+  width: 25%;
   padding: 10px;
 }
 #wrap table th:not(:first-child) {
