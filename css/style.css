@@ -555,13 +555,19 @@ body .title_box > span .right {
 #wrap .carousel img{
   position: relative;
 }
+#wrap .carousel .carousel-item:first-child li:nth-child(2) img{
+  right: 90px;
+}
 #wrap .carousel .carousel-item:first-child li:nth-child(3) img{
   right: 40px;
 }
 #wrap .carousel .carousel-item:nth-child(2) li:nth-child(1) img{
   right: 70px;
 }
-#wrap .carousel .carousel-item:first-child li:nth-child(2) img{
+#wrap .carousel .carousel-item:nth-child(3) li:nth-child(2) img{
+  right: 30px;
+}
+#wrap .carousel .carousel-item:nth-child(3) li:nth-child(3) img{
   right: 90px;
 }
 #wrap .box_gallery .inner ul.gallery li a {
@@ -1096,4 +1102,33 @@ div.scrollup {
 }
 div.scrollup:hover {
   opacity: 0.7;
+}
+#price-material {
+  display: none;
+  margin: 20px;
+  width: 580px;
+}
+#cboxLoadedContent #price-material {
+  display: block;
+}
+#price-material .product-name {
+  text-align: center;
+  font-weight: bold;
+}
+#price-material th,
+#price-material td {
+  padding: 2px 10px;
+  border: 1px solid #000000;
+  font-family: "Times New Roman", sans-serif;
+  line-height: 1.2;
+}
+#price-material th {
+  font-weight: bold;
+}
+#price-material .empty-cell {
+  height: 35px;
+  border: none;
+}
+#price-material td:not(:first-child) {
+  text-align: center;
 }

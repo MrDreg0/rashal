@@ -64,8 +64,12 @@ $(document).ready(function(){
     //colorbox
     $('.sert a').colorbox();
     $('.gallery a').colorbox({
-        maxWidth: '60%',
-        maxHeight: '460px'
+        maxWidth: '65%',
+        maxHeight: '70%'
+    })
+    $('#price-material_show').colorbox({
+        inline: true,
+        href: '#price-material'
     })
 
     $('.online_form .submit').on('click',function(event){
