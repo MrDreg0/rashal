@@ -264,6 +264,11 @@ body .title_box > span .right {
   font-size: 30px;
   padding-bottom: 5px;
 }
+.header .tel_box .tel:hover,
+.header .tel_box .tel:focus {
+  text-decoration: none;
+  color: #e6695b;
+}
 .banner .text {
   float: left;
   text-align: center;

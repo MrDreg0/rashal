@@ -16,7 +16,7 @@ $phone = urldecode($phone);
 $name = trim($name);
 $email = trim($email);
 $phone = trim($phone);
-mail("drak0on@yandex.ru", "Заявка с сайта", "Имя: ".$name."\r\nE-mail: ".$email."\r\nТелефон: ".$phone ,"From: \r\n".$email);
+mail("drak0on@yandex.ru", "Заявка с сайта", "Имя: ".$name."\r\nE-mail: ".$email."\r\nТелефон: ".$phone ,"From: info@rashal.ru \r\n");
 }
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -35,7 +35,7 @@ body
 }
 
 <script type="text/javascript">
-setTimeout('location.replace("/index.html")', 3000);
+setTimeout('location.replace("/")', 3000);
 /*Изменить текущий адрес страницы через 3 секунды (3000 миллисекунд)*/
 </script> 
 </head>
