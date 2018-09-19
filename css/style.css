@@ -729,6 +729,10 @@ body .title_box > span .right {
   background: url(../img/bg_line.png) center bottom no-repeat;
   padding-bottom: 75px;
 }
+#wrap .price-list table{
+  background-color: #fff;
+  border-radius: 15px;
+}
 #wrap table {
   padding: 10px;
   width: 100%;
@@ -749,6 +753,7 @@ body .title_box > span .right {
 }
 #wrap table tr:last-child {
   border-top: 2px solid rgba(123, 123, 123, 0.6);
+  border-bottom: none;
 }
 #wrap table th:not(:first-child),
 #wrap table td:not(:first-child) {
@@ -1136,4 +1141,7 @@ div.scrollup:hover {
 }
 #price-material td:not(:first-child) {
   text-align: center;
+}
+#footer .mail-link {
+  display: inline-block;
 }
