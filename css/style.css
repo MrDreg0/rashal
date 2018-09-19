@@ -266,7 +266,7 @@ body .title_box > span .right {
 }
 .header .tel_box .tel:hover,
 .header .tel_box .tel:focus {
-  text-decoration: none;
+  text-decoration: underline;
   color: #e6695b;
 }
 .banner .text {
